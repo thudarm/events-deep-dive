@@ -12,7 +12,7 @@ on:
   push:
     branches:
       - main # main 
-      - 'dev-*' # dev-new or dev-this-is-new
+      - dev # dev-new or dev-this-is-new
       - 'feat/**' # feat/new or feat/new/button
       # developer-1 would not trigger is not covered above
     paths:
