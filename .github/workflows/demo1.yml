@@ -1,4 +1,4 @@
-name: Events Demo 1
+name: Events Demo 1 if workflow changed and push
 on:
   pull_request:
     types:
@@ -15,9 +15,8 @@ on:
       - 'dev-*' # dev-new or dev-this-is-new
       - 'feat/**' # feat/new or feat/new/button
       # developer-1 would not trigger is not covered above
-    paths-ignore:
-      - '.github/workflows/*' # push event activates workflow if one of the branches
-                              # and did not change a file in the workflows folder
+    paths:
+      - '.github/workflows/*' # do trigger if workflows changed
 jobs:
   deploy:
     runs-on: ubuntu-latest
