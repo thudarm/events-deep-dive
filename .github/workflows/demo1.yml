@@ -3,7 +3,7 @@ on:
   pull_request:
     types:
       - opened
-     branches:
+    branches:
       - main # main 
       - 'dev-*' # dev-new or dev-this-is-new
       - 'feat/**' # feat/new or feat/new/button
